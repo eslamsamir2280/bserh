@@ -49,7 +49,7 @@ main {
   height: fit-content;
   z-index: 100;
   position: relative;
-  padding-bottom: 65px;
+  padding-bottom: 90px;
 }
 nav {
   display: flex;
@@ -155,4 +155,62 @@ main {
   gap: 10px;
   font-size: 25px;
   font-weight: 500;
+}
+@media (max-width: 900px) {
+  .nav-main {
+    display: none;
+  }
+}
+@media (max-width: 450px) {
+  .main-text h1 {
+    font-size: 35px;
+  }
+  .main-text a button {
+    width: 140px;
+    height: 44px;
+    border-radius: 6px;
+    outline: none;
+    background-color: var(--alt-main-color);
+    border: none;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    color: var(--main-color);
+    cursor: pointer;
+  }
+  .main-text div {
+    display: flex;
+    gap: 10px;
+  }
+}
+@media (max-width: 350px) {
+  .main-text h1 {
+    font-size: 30px;
+  }
+  .main-text a button {
+    width: 130px;
+    height: 40px;
+    border-radius: 6px;
+    outline: none;
+    background-color: var(--alt-main-color);
+    border: none;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    color: var(--main-color);
+    cursor: pointer;
+  }
+  .main-text div {
+    display: flex;
+    gap: 5px;
+  }
+  .decoration {
+    display: flex;
+    position: relative;
+    top: 65%;
+    transform: translate(0, -50%);
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+  }
 }
